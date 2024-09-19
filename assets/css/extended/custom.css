@@ -1,3 +1,6 @@
 .entry-content {
     -webkit-line-clamp: 10;
 }
+.post-entry a {
+    font-size: 14px;
+}

@@ -31,13 +31,6 @@
 </header>
 {{- end }}
 
-<!--https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/_default/search.html-->
-<!--<div id="searchbox">-->
-<!--	<input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"-->
-<!--	aria-label="search" type="search" autocomplete="off" maxlength="64">-->
-<!--	<ul id="searchResults" aria-label="search results"></ul>-->
-<!--</div>-->
-
 {{- if .Content }}
 <div class="post-content">
 	{{- if not (.Param "disableAnchoredHeadings") }}
@@ -45,6 +38,14 @@
 	{{- else }}{{ .Content }}{{ end }}
 </div>
 {{- end }}
+
+<!--https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/_default/search.html-->
+<div id="searchbox">
+	<input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+	aria-label="search" type="search" autocomplete="off" maxlength="64">
+	<ul id="searchResults" aria-label="search results"></ul>
+</div>
+<br/>
 
 {{- $pages := union .RegularPages .Sections }}
 
@@ -92,12 +93,15 @@
 		<p>{{ .Summary }}{{ if .Truncated }}...{{ end }}</p>
 	</div>
 	{{- end }}
+	{{- partial "edit_post.html" . -}}
 	{{- if not (.Param "hideMeta") }}
 	<footer class="entry-footer">
 		{{- partial "post_meta.html" . -}}
 	</footer>
 	{{- end }}
+	{{- if .Content }}
 	<a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+	{{- end }}
 </article>
 {{- end }}
 
