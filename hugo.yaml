@@ -21,7 +21,7 @@ pygmentsUseClasses: true
 params:
   summaryLength: 10000
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  #description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  description: "X Emoji Meanings - here all emojis used in twitterhandles are explained"
   #author: Theme PaperMod
   disableSpecial1stPost: true
   editPost:
