@@ -5,6 +5,12 @@ theme: ["PaperMod"]
 paginate: 50
 summaryLength: 10000
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
