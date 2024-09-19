@@ -1,6 +1,6 @@
 ---
 author: []
-title: "⏩ fast forward"
+title: "⏩ Fast Forward"
 #date: "2019-03-10"
 #description: "Often represents the Democratic Socialists or socialism; beauty, love."
 tags: []
