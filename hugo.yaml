@@ -1,6 +1,6 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: My New Hugo Site
+title: X Emoji Meanings
 theme: ["PaperMod"]
 paginate: 50
 summaryLength: 10000
@@ -15,11 +15,11 @@ pygmentsUseClasses: true
 params:
   summaryLength: 10000
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  #description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   #author: Theme PaperMod
   disableSpecial1stPost: true
   editPost:
-    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    URL: "https://github.com/InsOpDe/x-emoji-meaning/tree/master/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 mainsections: ["posts", "papermod"]
